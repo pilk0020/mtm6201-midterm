@@ -1,0 +1,167 @@
+
+
+    <!-- Homepage content -->
+    <header>
+        <h1>Welcome,<span id="user-name">Matthew Anderson</span></h1>
+    </header>
+    <main>
+        <section>
+            <h2>Let's get started by adding more information to your profile.</h2>
+            <a href="profile.html" id="profile-button">GO TO PROFILE</a>
+            <button class="dismiss-btn">DISMISS</button>
+        </section>
+    </main>
+    <footer>
+        <!-- <section class="trending-charity">
+            <h3>Trending Charities</h3>
+            <ul id="charities-list">
+                <li>
+                    <img src="img/logo.jpg" alt="Charity logo">
+                    <div>
+                        <h4>St. Loueis Welfare Org.</h4>
+                        <p>TOTAL RAISED: $10,000 - $12,500</p>
+                    </div>
+                </li>
+            </ul>
+        </section> -->
+        <div class="charity-info">
+            <h3>Trending Charities</h3>
+            <img src="img/logo.jpg" alt="St. Loueis Welfare Org.">
+            <h4>St. Loueis Welfare Org.</h4>
+            <p>TOTAL RAISED:</p>
+            <p>$10,000 $12,500</p>
+        </div>
+        <nav class="bottom-navbar">
+            <a href="#" class="icon"><i class="fas fa-home"></i> Home</a>
+            <a href="charity.html" class="icon"><i class="fas fa-heart"></i> Charity</a>
+            <a href="#" class="icon"><i class="fas fa-search"></i> Explore</a>
+            <a href="#" class="icon"><i class="fas fa-user"></i> Profile</a>
+        </nav>
+    </footer>
+
+<!---css from here-->
+<style>
+    /* Header styles */
+header {
+  background-color: transparent;
+  color: #000; /* Set font color to black */
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 300; /* Thin font weight */
+  font-size: 24px; /* Decrease font size for mobile version */
+}
+
+#user-name {
+  color: gold;
+}
+
+/* Main content styles */
+main {
+  padding: 20px;
+}
+
+main section {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#profile-button {
+  display: inline-block;
+  background-color:  #4CAF50;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+#profile-button:hover {
+  background-color: #45a049;
+}
+
+.dismiss-btn {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dismiss-btn:hover {
+  background-color: #c82333;
+}
+
+/* Footer styles */
+footer {
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+.trending-charity {
+  color: #555; /* Grey color for text */
+  font-size: smaller; /* Smaller font size */
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.trending-charity h3 {
+  margin-bottom: 1rem;
+}
+
+.trending-charity ul {
+  list-style: none;
+  padding: 0;
+}
+
+.trending-charity li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.trending-charity img {
+  width: 50px; /* width of the image */
+  height: 50px; /* height of the image */
+  margin-bottom: 10px; /* margin bottom to image */
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+  .trending-charity img {
+    width: 30px; /* width of the image for mobile devices */
+    height: 30px; /* height of the image for mobile devices */
+  }
+}
+
+/* Bottom navigation bar styles */
+.bottom-navbar {
+  background-color: transparent; /* Remove background */
+  padding: 4px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.bottom-navbar .icon {
+  color: #000; /* font color to black */
+  text-decoration: none;
+  padding: 10px 5px; /* Decrease padding */
+  transition: color 0.3s ease;
+  font-weight: 300; /* Thin font weight */
+  font-size: 16px; /* Decrease font size */
+}
+
+.bottom-navbar .icon:hover {
+  background-color: #4CAF50; /* Green color on hover */
+  color: #fff; /* White text color on hover */
+}
+</style>

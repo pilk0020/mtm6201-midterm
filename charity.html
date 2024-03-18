@@ -1,0 +1,76 @@
+
+<!-- HTML Structure -->
+<div class="container" role="main">
+    <h1>San Francisco Trending Charities</h1>
+    <div class="card" role="article">
+        <img src="img/WhatsApp Image 2024-03-18 at 11.39.10_1dfd68d5.jpg" alt="Team Rubicon logo">
+        <div class="card-text">
+            <h2>TEAM RUBICON</h2>
+            <h3>TER RESPONSE</h3>
+            <h3>AMMY</h3>
+            <p>Total Raised: <span class="funds-number">$40,000</span></p>
+        </div>
+    </div>
+    <div class="card" role="article">
+        <img src="img/make a change charity.avif" alt="Ghana Residential Fund logo">
+        <div class="card-text">
+            <h2>Ghana Residential Fund</h2>
+            <p>Total Raised: <span class="funds-number">$50,000</span></p>
+        </div>
+    </div>
+</div>
+
+<style>
+   /* CSS Styles */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            transition: transform 0.3s ease; /* Animation */
+        }
+
+        .card:hover {
+            transform: translateY(-5px); /* Animation */
+        }
+
+        .card img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .card-text {
+            flex: 1;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        h2 {
+            margin: 20px 0;
+        }
+
+        h3 {
+            margin: 10px 0;
+        }
+
+        p {
+            margin: 20px 0;
+        }
+
+        .funds-number {
+            color: red;
+        }
+    </style>

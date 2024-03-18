@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login Form</title>
+</head>
+<body>
+
+    <div class="container">
+        <form action="welcome.html" class="form" aria-labelledby="login-heading">
+            <h1 id="login-heading">Login</h1>
+            <div class="input-group">
+                <input type="text" id="username" required aria-label="Username or Email">
+                <label for="username">Username or Email</label>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" required aria-label="Password">
+                <label for="password">Password</label>
+            </div>
+            <div class="forgot-remember">
+                <label><input type="checkbox">Remember me</label>
+                <a href="forgot_password.html">Forgot Password</a> <!-- Link to forgot password page -->
+            </div>
+            <button type="submit" class="button" aria-label="Login">CONTINUE TO LOGIN</button>
+        </form>
+    </div>
+
+</body>
+</html>
