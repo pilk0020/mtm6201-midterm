@@ -27,6 +27,7 @@
         <div class="charity-info">
             <h3>Trending Charities</h3>
             <img src="img/logo.jpg" alt="St. Loueis Welfare Org.">
+            <img src="img/mtm6201-midterm/img/WhatsApp Image 2024-03-18 at 11.36.53_4e40c9c4.jpg" alt="Another Image">
             <h4>St. Loueis Welfare Org.</h4>
             <p>TOTAL RAISED:</p>
             <p>$10,000 $12,500</p>
@@ -38,10 +39,17 @@
             <a href="#" class="icon"><i class="fas fa-user"></i> Profile</a>
         </nav>
     </footer>
+    <head>
+      <!-- Other meta emohjiii tags and links -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  </head>
 
 <!---css from here-->
 <style>
     /* Header styles */
+/* Updated CSS */
+
+/* Header styles */
 header {
   background-color: transparent;
   color: #000; /* Set font color to black */
@@ -92,6 +100,7 @@ main section {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease; /* Add transition */
 }
 
 .dismiss-btn:hover {
@@ -104,6 +113,28 @@ footer {
   padding-top: 20px;
 }
 
+/* Charity info styles */
+.charity-info {
+  text-align: center;
+  display: flex; /* Add flex display */
+  flex-direction: column; /* Column layout */
+  align-items: center; /* Center items horizontally */
+}
+
+.charity-info img {
+  width: 150px; /* Reduce image size */
+  height: 150px; /* Reduce image size */
+  object-fit: cover; /* Maintain aspect ratio */
+  border-radius: 10px; /* Adjust border curve */
+  margin-bottom: 20px; /* Add margin between images */
+  transition: transform 0.3s ease; /* Add scrolling animation */
+}
+
+.charity-info img:hover {
+  transform: scale(1.1); /* Increase scale on hover */
+}
+
+/* Trending charity styles */
 .trending-charity {
   color: #555; /* Grey color for text */
   font-size: smaller; /* Smaller font size */
@@ -142,19 +173,18 @@ footer {
     height: 30px; /* height of the image for mobile devices */
   }
 }
-
 /* Bottom navigation bar styles */
 .bottom-navbar {
   background-color: transparent; /* Remove background */
   padding: 4px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between; /* Distribute space between items */
 }
 
 .bottom-navbar .icon {
   color: #000; /* font color to black */
   text-decoration: none;
-  padding: 10px 5px; /* Decrease padding */
+  padding: 10px 20px; /* Adjust padding to create space */
   transition: color 0.3s ease;
   font-weight: 300; /* Thin font weight */
   font-size: 16px; /* Decrease font size */
@@ -164,4 +194,3 @@ footer {
   background-color: #4CAF50; /* Green color on hover */
   color: #fff; /* White text color on hover */
 }
-</style>
